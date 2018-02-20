@@ -11,7 +11,7 @@
 
 /* =============================================
 	Base layout styles used by mobile devices
-	up to 480px and cascaded to larger devices 
+	up to 480px and cascaded to larger devices
 	unless superceded by other styles.
    =============================================
 */
@@ -91,7 +91,7 @@ article address {
 	padding-bottom: 20px;
 	font-size: 0.9em;
 }
-	
+
 aside {
 	display: none;
 }
@@ -130,7 +130,7 @@ footer {
 
 /* =============================================
 	Tablet layout styles used by devices
-	601px to 768px and cascaded to larger 
+	601px to 768px and cascaded to larger
 	devices.
    =============================================
 */
@@ -168,7 +168,7 @@ aside {
 	display: block;
 	float: left;
 	width: 250px;
-	background-color: #a29d96;
+	background-color: #66ccff;
 	margin-top: -30px;
 }
 
