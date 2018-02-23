@@ -26,16 +26,97 @@
   <header>
   <nav>
     <ul>
-      <li><a href="jtc_index_txt.html">Home</a></li>
-      <li>  <a href="jtc_services_txt.html">Services</a></li>
-      <li>  <a href="career.html">Shop online</a></li>
-      <li><a href="promise.html">Meeting time</a></li>
-      <li>  <a href="ashborer.html">Chatting room</a></li>
+        <li><a href="clubweb_start.html">HOME</a></li>
+      <li><a href="webclub_metting.html">SERVICES</a></li>
     </ul>
   </nav>
   </header>
+<p><strong>JOIN THE CLUB BY:</strong></p>
+<p>Send us an email: <a href= "mailto:truongthang738@gmail.com">truongthang738@gmail.com</a></p>
+<p>Give us a call: <a hrref="tel:+1(563) 723-5600">(563) 232-2141</a></p>
+<p>Also, you are welcome to visit our location at:</p>
+<p><span style="color:blue">3505 West Locust, Davenport, IA 52804</span></p>
+<p><br>
+<p><em>GET SOME IDEA ABOUT OUR LOCATION ON THIS MAP!</em></p>
+<div id="googleMap" style="width: 600px; height: 230px;">Google Map</div>
 
+<head>
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+var gmap = new google.maps.LatLng(10.765974,106.689422);
+var marker;
+function initialize()
+{
+    var mapProp = {
+         center:new google.maps.LatLng(41.5368718,-90.6293108,678),
+         zoom:16,
+        mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
 
-</table>
+    var map=new google.maps.Map(document.getElementById("googleMap")
+    ,mapProp);
+
+  var styles = [
+    {
+      featureType: 'road.arterial',
+      elementType: 'all',
+      stylers: [
+        { hue: '#fff' },
+        { saturation: 100 },
+        { lightness: -48 },
+        { visibility: 'on' }
+      ]
+    },{
+      featureType: 'road',
+      elementType: 'all',
+      stylers: [
+
+      ]
+    },
+    {
+        featureType: 'water',
+        elementType: 'geometry.fill',
+        stylers: [
+            { color: '#adc9b8' }
+        ]
+    },{
+        featureType: 'landscape.natural',
+        elementType: 'all',
+        stylers: [
+            { hue: '#809f80' },
+            { lightness: -35 }
+        ]
+    }
+  ];
+
+  var styledMapType = new google.maps.StyledMapType(styles);
+  map.mapTypes.set('Styled', styledMapType);
+
+  marker = new google.maps.Marker({
+    map:map,
+    draggable:true,
+    animation: google.maps.Animation.DROP,
+    position: gmap
+  });
+  google.maps.event.addListener(marker, 'click', toggleBounce);
+}
+
+function toggleBounce() {
+
+  if (marker.getAnimation() !== null) {
+    marker.setAnimation(null);
+  } else {
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+  }
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<br><br><br><br><br>
+<footer>
+  <pre>BADMINTON CLUB &#8226; 3505 West Locust,&nbsp; Davenport, IA &#8226; (563) 723-5600</pre>
+ </footer>
+
 </body>
 </html>
